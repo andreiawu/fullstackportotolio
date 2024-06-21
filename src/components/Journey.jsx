@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function Journey() {
   return (
     <div className="journey-wrapper">
@@ -7,7 +9,9 @@ export default function Journey() {
       <div className="journey-section-two">
         <div className="journey-info-box">
           <div className="journey-year">
-            <span className="journey-year-num">2018</span>
+            <div className="year-limit-box">
+              <span className="journey-year-num">2018</span>
+            </div>
             <div className="journey-line">
             </div>
           </div>
@@ -18,7 +22,9 @@ export default function Journey() {
         </div>
         <div className="journey-info-box">
           <div className="journey-year">
-            <span className="journey-year-num">2021</span>
+            <div className="year-limit-box">
+              <span className="journey-year-num">2018</span>
+            </div>
             <div className="journey-line">
             </div>
           </div>
@@ -29,7 +35,9 @@ export default function Journey() {
         </div>
         <div className="journey-info-box">
           <div className="journey-year">
-            <span className="journey-year-num">2023</span>
+            <div className="year-limit-box">
+              <span className="journey-year-num">2018</span>
+            </div>
             <div className="journey-line">
             </div>
           </div>
@@ -40,7 +48,9 @@ export default function Journey() {
         </div>
         <div className="journey-info-box">
           <div className="journey-year">
-            <span className="journey-year-num">2024</span>
+            <div className="year-limit-box">
+              <span className="journey-year-num">2018</span>
+            </div>
             <div className="journey-line">
             </div>
           </div>

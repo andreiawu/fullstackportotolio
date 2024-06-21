@@ -4,7 +4,7 @@ import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Journey from './Journey';
 import Hobbies from './Hobbies';
-import Scroll from './Scroll';
+// import Scroll from './Scroll';
 
 export default function About() {
   return (
