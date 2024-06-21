@@ -1,38 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Candal&family=Carme&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  background-color: #170831;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background: linear-gradient(to right, #150928, #3C1082, #9632BA);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0.625rem 5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
+.navbar-ul li a {
+  color: #DBDBDB;
+  font-size: 1.25rem;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-ul li a:hover {
+  color: #FFFFFF;
+  font-weight: 400;
+  transform: scale(1.1);
+}
+
+.navbar-ul li a:active {
+  transform: scale(0.9);
+}
+
+.logo {
+  width: 3.375rem;
+}
+
+.logo-link {
+  cursor: pointer;
+}
+
+.home {
+  display: flex;
+  background-color: #150928;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 6.25rem 7.5rem 0 7.5rem;
+  background-image: url("/public/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 100vh;
+  gap: 2.5rem;
+}
+
+.home-slogan {
+  color: #fff;
+  font-family: "Candal", sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.home-products {
+  background: linear-gradient(to right, #FC58FF -25%, #5915C5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-projects {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.home-projects::after {
+  content: "";
+  display: block;
+  height: 0.25rem;
+  width: 100%;
+  background-color: #FC58FF;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.home-projects:hover::after {
+  transform: scaleX(1);
+}
+
+.home-text {
+  font-size: 1.5rem;
+  font-family: "Carme", sans-serif;
+  color: #D5D5D5;
+  margin-top: 11.25rem;
+}
+
+.ilustration {
+  position: absolute;
+  width: 28rem;
+  top: 40%;
+  right: 9%;
+}
+
+.first-section {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.about-pic-section {
+  margin-top: 5rem;
+  margin-left: 5rem;
+}
+
+.about-text-description {
+  width: 50rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 2rem;
+  padding-left: 14rem;
+  margin-right: 5rem;
+  margin-top: 3rem;
+}
+
+.about-me {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 10rem;
+}
+
+.about-p {
+  color: #CFCFCF;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.hire-me-btn {
+  font-size: 1.3rem;
+  color: #fff;
+  background: linear-gradient(to right, #AF39E4, #6412C2);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  width: 14rem;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 15rem 5rem;
+
+}
+
+.skills-technologies-box {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2rem;
+}
+
+.skills-icon-box {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.skills-title-box, .hobbies-section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skills-title,
+.journey-title, .hobbies-title {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 600;
 }
+
+.skills-small-p, .hobbies-p {
+  font-size: 1.5rem;
+  color: #CFCFCF;
+}
+
+.icon-size-js {
+  width: 4.438rem;
+}
+
+.icon-size-css {
+  width: 5.063rem;
+}
+
+.icon-size-html {
+  width: 4.563rem;
+}
+
+.icon-size-tailwind {
+  width: 3.875rem;
+}
+
+.icon-size-react {
+  width: 5.813rem;
+}
+
+.icon-size-nodejs {
+  width: 4.5rem;
+}
+
+.icon-size-mongodb {
+  width: 2.25rem;
+}
+
+.icon-size-figma {
+  width: 3.5rem;
+}
+
+.icon-size-vscode {
+  width: 5.063rem;
+}
+
+.skills-icon-box {
+  background-color: #2A1254;
+  width: 7.625rem;
+  height: 7.625rem;
+  border-radius: 0.625rem;
+  margin: 0 auto;
+}
+
+.journey-wrapper {
+  padding: 0 5rem 15rem 5rem;
+  width: 50rem;
+  color: #fff;
+}
+
+.journey-info-box {
+  display: flex;
+  gap: 2rem;
+}
+
+.journey-section-two {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.journey-year {
+  display: flex;
+  gap: 2rem;
+}
+
+.journey-year-num {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FC58FF;
+}
+
+.journey-p {
+  font-size: 0.875rem;
+  color: #D9D9D9;
+}
+
+.journey-line {
+  background: linear-gradient(to right, #7433DB, #5915C5);
+  height: 0.5rem;
+  width: 4.5rem;
+  border-radius: 50px;
+  margin-top: 1rem;
+}
+
+.journey-info-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.journey-school {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.hobbies-wrapper {
+  padding: 0 5rem 15rem 5rem;
+}
+
+.brush-icon {
+  width: 9.813rem;
+}
+
+.gaming-icon {
+  width: 11.688rem;
+}
+
+.bubble-tea-icon {
+  width: 11.188rem;
+}
+
+.browser-icon {
+  width: 8.438rem;
+}
+
+.hobbies-section-two {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 6rem 0 0 0;
+}
+
+.hobbies-text-box {
+  display: inline-block;
+  background: linear-gradient(to bottom, rgba(128, 37, 211, 0.3), rgba(60, 16, 130, 0.3));
+  border-radius: 0.625rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+.op {
+  position: absolute;
+  top: 28rem;
+}
+
+.hobbies-word {
+  font-size: 2rem;
+  background: linear-gradient(to bottom, #FC58FF, #5915C5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hobbies-img-boxbox {
+  height: 17rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobbies-words-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-top {
+  background-color: #380E7B;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.download-cv {
+  background: linear-gradient(to top, #AF39E4, #631BD6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  width:5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+
+.cv-word {
+  font-size: 1.25rem;
+}
+
+.circle {
+  width: 24.688rem;
+}
+
+.blur {
+  position: absolute;
+  left: 6rem;
+  width: 35rem;
+}
+
