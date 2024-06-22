@@ -5,6 +5,7 @@ import ProjectCardTwo from "./ProjectCardTwo";
 import ProjectCardThree from "./ProjectCardThree";
 import ProjectCardFour from "./ProjectCardFour";
 import Scroll from "./Scroll";
+import { motion } from 'framer-motion';
 
 export default function Projects() {
   return (
@@ -12,21 +13,55 @@ export default function Projects() {
       <Header />
       <div className="projects-box">
         <div className="projects-fst-section">
-          <div className="projects-title-box">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="projects-title-box"
+          >
             <h2 className="projects-title">PROJECTS</h2>
-          </div>
-          <div className="projects-p-box">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="projects-p-box"
+          >
             <p className="projects-p">Here, you'll find a showcase of my projects highlighting my expertise in both front-end and back-end development. Explore my work to see how I build efficient, innovative, and user-friendly applications.</p>
-          </div>
+          </motion.div>
         </div>
         <div className="projects-sec-section">
           <div className="project-flexbox">
-            <ProjectCard />
-            <ProjectCardTwo />
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <ProjectCard />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <ProjectCardTwo />
+            </motion.div>
           </div>
           <div className="project-flexbox-two">
-            <ProjectCardThree />
-            <ProjectCardFour />
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.0 }}
+            >
+              <ProjectCardThree />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
+            >
+              <ProjectCardFour />
+            </motion.div>
           </div>
         </div>
       </div>
@@ -34,5 +69,5 @@ export default function Projects() {
         <Scroll />
       </div>
     </div>
-  )
+  );
 }

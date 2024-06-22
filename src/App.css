@@ -35,13 +35,12 @@ html {
   font-size: 1.25rem;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
-  transition: color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .navbar-ul li a:hover {
-  color: #FFFFFF;
-  font-weight: 400;
-  transform: scale(1.1);
+  transform: translateY(-5px);
+  color: #FC58FF;
 }
 
 .navbar-ul li a:active {
@@ -758,7 +757,7 @@ html {
 .project-btn-code {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   font-size: 0.875rem;
   color: #fff;
   background: none;

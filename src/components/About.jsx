@@ -5,6 +5,7 @@ import Skills from './Skills';
 import Journey from './Journey';
 import Hobbies from './Hobbies';
 // import Scroll from './Scroll';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (

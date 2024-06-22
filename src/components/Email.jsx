@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export default function Email() {
   return (
@@ -24,7 +25,13 @@ export default function Email() {
           </div>
         </div>
         <div className="emailbox-submit">
-          <button className="email-submit-btn">SUBMIT</button>
+          <motion.button
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.2 },
+            }}
+            whileTap={{ scale: 0.9 }}
+            className="email-submit-btn">SUBMIT</motion.button>
         </div>
       </div>
     </div>
