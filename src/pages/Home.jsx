@@ -1,11 +1,10 @@
 import React from 'react';
-import Header from './Header';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
     <div>
-      <Header />
       <div className="home">
         <motion.img
           initial={{ opacity: 0, scale: 0.9 }}
@@ -27,13 +26,15 @@ export default function Home() {
             ideas to <span className='home-products'>products</span>.
           </motion.h1>
         </div>
-        <div className="home-secrow">
-          <motion.button
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.4 }}
-            className='home-projects'>VIEW PROJECTS</motion.button>
-        </div>
+        <Link to="/projects">
+          <div className="home-secrow">
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: 0.4 }}
+              className='home-projects'>VIEW PROJECTS</motion.button>
+          </div>
+        </Link>
         <div className="home-thrdrow">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -46,6 +47,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-
   );
 }

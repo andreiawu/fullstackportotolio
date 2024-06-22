@@ -1,16 +1,14 @@
 import React from "react";
-import Header from "./Header";
-import ProjectCard from "./ProjectCard";
-import ProjectCardTwo from "./ProjectCardTwo";
-import ProjectCardThree from "./ProjectCardThree";
-import ProjectCardFour from "./ProjectCardFour";
-import Scroll from "./Scroll";
+import ProjectCard from "../components/ProjectCard";
+import ProjectCardTwo from "../components/ProjectCardTwo";
+import ProjectCardThree from "../components/ProjectCardThree";
+import ProjectCardFour from "../components/ProjectCardFour";
+import Scroll from "../components/Scroll";
 import { motion } from 'framer-motion';
 
 export default function Projects() {
   return (
     <div className="projects-wrapper">
-      <Header />
       <div className="projects-box">
         <div className="projects-fst-section">
           <motion.div

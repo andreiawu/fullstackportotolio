@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from './Header';
-import Email from './Email';
+import Email from '../components/Email';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
     <div className='contact-wrapper'>
-      <Header />
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
