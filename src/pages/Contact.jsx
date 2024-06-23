@@ -51,13 +51,20 @@ export default function Contact() {
                 transition={{ duration: 0.6, delay: 0.8 }}
                 className="contact-icon"
               >
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="socials-btn"
-                >
-                  <img src="/images/github.png" alt="github-icon" className="github-icon" />
-                </motion.button>
+                <a
+                  href="https://github.com/andreiawu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='social-a'>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="socials-btn"
+                  >
+                    <img src="/images/github.png" alt="github-icon" className="github-icon" />
+                  </motion.button>
+                </a>
+
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -65,13 +72,18 @@ export default function Contact() {
                 transition={{ duration: 0.6, delay: 1.0 }}
                 className="contact-icon"
               >
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="socials-btn"
-                >
-                  <img src="/images/linkedin.png" alt="linkedin-icon" className="linkedin-icon" />
-                </motion.button>
+                <a href="https://www.linkedin.com/in/andreia-wu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='social-a'>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="socials-btn"
+                  >
+                    <img src="/images/linkedin.png" alt="linkedin-icon" className="linkedin-icon" />
+                  </motion.button>
+                </a>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -105,7 +117,7 @@ export default function Contact() {
           </motion.div>
         </div>
       </motion.div>
-        <Email />
+      <Email />
     </div>
   )
 }
