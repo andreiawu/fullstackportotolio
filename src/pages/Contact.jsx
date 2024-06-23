@@ -3,6 +3,11 @@ import Email from '../components/Email';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:andreia.12345@hotmail.com';
+  };
+
   return (
     <div className='contact-wrapper'>
       <motion.div
@@ -91,13 +96,20 @@ export default function Contact() {
                 transition={{ duration: 0.6, delay: 1.2 }}
                 className="contact-icon"
               >
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className="socials-btn"
+                <a
+                  href="https://discord.gg/AbTn2rUqNC"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className='social-a'
                 >
-                  <img src="/images/discord.png" alt="discord-icon" className="discord-icon" />
-                </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    className="socials-btn"
+                  >
+                    <img src="/images/discord.png" alt="discord-icon" className="discord-icon" />
+                  </motion.button>
+                </a>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -109,6 +121,7 @@ export default function Contact() {
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                   className="socials-btn"
+                  onClick={handleEmailClick}
                 >
                   <img src="/images/email.png" alt="email-icon" className="email-icon" />
                 </motion.button>
