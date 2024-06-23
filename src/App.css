@@ -767,6 +767,7 @@ html {
   cursor: pointer;
   width: 16rem;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .github-grey {

@@ -26,7 +26,7 @@ export default function ProjectCard() {
         >
           LIVE PREVIEW
         </motion.button>
-        <motion.button
+        <motion.a
           className="project-btn-code"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -36,7 +36,7 @@ export default function ProjectCard() {
         >
           <img src="/images/github-grey.png" alt="github-icon" className="github-grey" />
           VIEW CODE
-        </motion.button>
+        </motion.a>
       </div>
     </div>
   )
