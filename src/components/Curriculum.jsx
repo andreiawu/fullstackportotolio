@@ -1,7 +1,12 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
+const buttonVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
 
 export default function Curriculum() {
-
   const handleDownload = () => {
     const url = process.env.PUBLIC_URL + '/CV_AndreiaWu_.pdf'; 
     const link = document.createElement('a');
@@ -15,7 +20,12 @@ export default function Curriculum() {
   };
 
   return (
-    <div className="cv">
+    <motion.div
+      className="cv"
+      variants={buttonVariants}
+      initial="hidden"
+      animate="visible"
+    >
       <button
         className="download-cv"
         onClick={handleDownload}
@@ -25,6 +35,6 @@ export default function Curriculum() {
           <span className="cv-word">CV</span>
         </div>
       </button>
-    </div>
-  )
+    </motion.div>
+  );
 }

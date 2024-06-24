@@ -386,6 +386,14 @@ html {
   cursor: pointer;
 }
 
+.scroll-top-two {
+  background-color: #380E7B;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
 .download-cv {
   background: linear-gradient(to top, #AF39E4, #631BD6);
   display: flex;
