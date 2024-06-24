@@ -3,7 +3,7 @@ import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Journey from './Journey';
 import Hobbies from './Hobbies';
-// import Scroll2 from './Scroll2';
+import Scroll2 from './Scroll2';
 import Fade from 'react-reveal/Fade'
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
         <Journey />
         <Hobbies />
       </Fade>
-      {/* <Scroll2 /> */}
+      <Scroll2 />
     </div>
   )
 }

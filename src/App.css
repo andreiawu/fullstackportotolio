@@ -801,3 +801,9 @@ html {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
+.scroll-box-two {
+  position: fixed;
+  top: 40rem;
+  right: 1rem;
+}
