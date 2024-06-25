@@ -807,3 +807,15 @@ html {
   top: 40rem;
   right: 1rem;
 }
+
+.input-container input:focus,
+.input-container textarea:focus, .text-box:focus {
+  border-color: #9452ff;
+  outline: none; 
+}
+
+.name-input,
+.email-input,
+.text-box {
+  transition: border-color 0.3s ease; 
+}
