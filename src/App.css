@@ -110,10 +110,8 @@ html {
 
 .home-text {
   font-size: 1.5rem;
-  font-family: "Carme", sans-serif;
   color: #D5D5D5;
-  margin-top: 11rem;
-  margin-bottom: 2rem;
+  margin-top: 8rem;
 }
 
 .ilustration {
@@ -809,13 +807,475 @@ html {
 }
 
 .input-container input:focus,
-.input-container textarea:focus, .text-box:focus {
+.input-container textarea:focus,
+.text-box:focus {
   border-color: #9452ff;
-  outline: none; 
+  outline: none;
 }
 
 .name-input,
 .email-input,
 .text-box {
-  transition: border-color 0.3s ease; 
+  transition: border-color 0.3s ease;
+}
+
+/* Media Queries
+@media (max-width: 1200px) {
+  .home {
+    padding: 5rem 6rem 0 6rem;
+  }
+
+  .home-slogan {
+    font-size: 3.5rem;
+  }
+
+  .ilustration {
+    width: 24rem;
+    top: 35%;
+    right: 8%;
+  }
+}
+
+@media (max-width: 992px) {
+  .home {
+    padding: 4rem 5rem 0 5rem;
+  }
+
+  .home-slogan {
+    font-size: 3rem;
+  }
+
+  .home-text {
+    font-size: 1.25rem;
+    margin-top: 9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ilustration {
+    width: 20rem;
+    top: 37%;
+    right: 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 3rem 4rem 0 4rem;
+  }
+
+  .home-slogan {
+    font-size: 2.5rem;
+  }
+
+  .home-text {
+    font-size: 1.125rem;
+    margin-top: 7rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .ilustration {
+    width: 16rem;
+    top: 39%;
+    right: 6%;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .home-slogan {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .home-text {
+    font-size: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .home-projects {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .ilustration {
+    width: 12rem;
+    top: 40%;
+    right: 5%;
+  }
+}
+ */
+
+@media screen and (max-width: 480px) {
+  .home-slogan {
+    font-size: 1.625rem;
+  }
+
+  .home {
+    background-color: #150928;
+    padding: 4.375rem 2.5rem 0 2.5rem;
+    background-image: url("/public/images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .home-projects {
+    font-size: 0.75rem;
+    padding-top: 1rem;
+  }
+
+  .ilustration {
+    width: 15.938rem;
+  }
+
+  .home-text {
+    font-size: 0.938rem;
+    padding-top: 17rem;
+  }
+
+  .logo {
+    width: 3.375rem;
+  }
+
+  .navbar {
+    background: linear-gradient(to right, #150928, #3C1082, #9632BA);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0.625rem 2.5rem;
+  }
+
+  .get-in-touch-title {
+    font-size: 1.625rem;
+  }
+
+  .touch-p {
+    font-size: 0.75rem;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-span {
+    font-size: 0.875rem;
+  }
+
+  .contact-left-section {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top: 0.5;
+  }
+
+  .contact-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .emailbox {
+    width: 18.375rem;
+    position: absolute;
+    top: 27rem;
+    left: 2.5rem;
+  }
+
+  .lets-talk {
+    font-size: 1.5rem;
+  }
+
+  .emailbox-info-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name-input,
+  .email-input {
+    width: 100%;
+  }
+
+  .contact-icon {
+    width: 2rem;
+  }
+
+  .contact-box {
+    padding-top: 45rem;
+  }
+
+  .touch-touch-box {
+    width: 20rem;
+  }
+
+  .touch-icon-socials-box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3.5rem;
+  }
+
+  .contact-right-section {
+    width: 0;
+  }
+
+  .circle {
+    width: 14.125rem;
+  }
+
+  .blur {
+    position: absolute;
+    left: 6rem;
+    width: 20rem;
+  }
+
+  .cv {
+    position: absolute;
+    top: 18rem;
+    left: 2.5rem;
+  }
+
+  .about-me {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10rem;
+  }
+
+  .first-section {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .about-text-description {
+    padding-left: 2.5rem;
+    width: 22rem;
+    margin: 0;
+  }
+
+  .about-p {
+    font-size: 0.875rem;
+  }
+
+  .skills-title {
+    font-size: 1.375rem;
+  }
+
+  .skills-small-p {
+    font-size: 0.875rem;
+    text-align: end;
+  }
+
+  .skills-icon-box {
+    width: 5.25rem;
+    height: 5.25rem;
+  }
+
+  .icon-size-js {
+    width: 2.938rem;
+  }
+  
+  .icon-size-css {
+    width: 3.375rem;
+  }
+  
+  .icon-size-html {
+    width: 3.063rem;
+  }
+  
+  .icon-size-tailwind {
+    width: 2.875rem;
+  }
+  
+  .icon-size-react {
+    width: 3.938rem;
+  }
+  
+  .icon-size-nodejs {
+    width: 2.813rem;
+  }
+  
+  .icon-size-mongodb {
+    width: 1.5rem;
+  }
+  
+  .icon-size-figma {
+    width: 2.313rem;
+  }
+  
+  .icon-size-vscode {
+    width: 3.5rem;
+  }
+
+  .skills-technologies-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .second-section {
+    padding-left: 2.5rem;
+  }
+
+  .journey-title, .hobbies-title {
+    font-size: 1.375rem;
+  }
+
+  .journey-year-num {
+    font-size: 1rem;
+  }
+
+  .journey-school {
+    font-size: 0.875rem;
+  }
+
+  .hobbies-p {
+    font-size: 0.875rem;
+  }
+
+  .hobbies-text-box {
+    width: 6.75rem;
+  }
+
+  .hobbies-word {
+    font-size: 1rem;
+  }
+
+  .brush-icon {
+    width: 6rem;
+  }
+  
+  .gaming-icon {
+    width: 5.688rem;
+  }
+  
+  .bubble-tea-icon {
+    width: 4.375rem;
+  }
+  
+  .browser-icon {
+    width: 5.5rem;
+  }
+  
+  .hobbies-section-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .hobbies-wrapper {
+    padding-left: 2.5rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .projects-p {
+    font-size: 0.75rem;
+  }
+
+  .project-cards {
+    width: 17.5rem;
+    height: 28rem;
+    padding: 1.5rem;
+  }
+
+  .cover {
+    width: 14.313rem;
+  }
+
+  .project-title {
+    font-size: 0.875rem;
+  }
+
+  .calmly-description {
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .project-btn-live {
+    width: 6.938rem;
+    font-size: 0.5rem;
+  }
+
+  .project-btn-code {
+    font-size: 0.5rem;
+  }
+
+  .github-grey {
+    width: 1.063rem;
+  }
+  
+  .footprint-cover {
+    width: 4.313rem;
+  }
+
+  .project-flexbox {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .project-flexbox-two {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projects-p-box {
+    width: 20rem;
+    display: flex;
+  }
+
+  .journey-wrapper {
+    padding: 0 5rem 2.5rem 5rem;
+    width: 20rem;
+    color: #fff;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hamburger-menu {
+  display: none;
+  /* Hide hamburger menu by default */
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.line.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.line.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
