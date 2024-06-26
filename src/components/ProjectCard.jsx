@@ -24,7 +24,7 @@ export default function ProjectCard() {
           transition={{ duration: 0.3 }}
           className="project-btn-live"
         >
-          LIVE PREVIEW
+          WATCH PREVIEW
         </motion.button>
         <motion.a
           href="https://github.com/Josuzin/calmly"
