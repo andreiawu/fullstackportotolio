@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   return (
     <header>
@@ -16,18 +11,12 @@ export default function Header() {
             <img src="/images/logo-icon.png" alt="logo" className='logo' />
           </Link>
         </div>
-        <div className={`links-box ${menuOpen ? 'open' : ''}`}>
+        <div className='links-box'>
           <ul className='navbar-ul'>
             <li><Link to="/home">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
-        </div>
-        <div className='hamburger-menu' onClick={toggleMenu}>
-          <img src="/images/hamburguer-menu.png" alt="hamburguer-menu" className="hamburger-icon" />
-          <div className={`line ${menuOpen ? 'open' : ''}`} />
-          <div className={`line ${menuOpen ? 'open' : ''}`} />
-          <div className={`line ${menuOpen ? 'open' : ''}`} />
         </div>
       </nav>
     </header>

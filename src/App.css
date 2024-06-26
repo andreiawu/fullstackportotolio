@@ -169,11 +169,22 @@ html {
   width: 14rem;
 }
 
+.read-more-btn {
+  font-size: 0.625rem;
+  color: #fff;
+  background: linear-gradient(to right, #AF39E4, #6412C2);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  width: 6.625rem;
+}
+
 .second-section {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 15rem 5rem;
+  padding: 15rem 2.5rem;
 
 }
 
@@ -198,6 +209,10 @@ html {
   gap: 2rem;
   color: #fff;
   padding-top: 10rem;
+}
+
+.skills-title-box {
+  padding-top: 4rem;
 }
 
 .skills-title,
@@ -290,6 +305,17 @@ html {
 .journey-p {
   font-size: 0.875rem;
   color: #D9D9D9;
+}
+
+.journey-p {
+  max-height: 60px;
+  /* Adjust as needed */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.journey-p.show-details {
+  max-height: none;
 }
 
 .year-limit-box {
@@ -822,10 +848,10 @@ html {
 }
 
 .about-ilustration {
-width: 14.938rem;
-position: absolute;
-top: 10rem;
-left: 12rem;
+  width: 14.938rem;
+  position: absolute;
+  top: 10rem;
+  left: 12rem;
 }
 
 .video-container {
@@ -858,7 +884,7 @@ left: 12rem;
   top: 85%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  background: #fff; 
+  background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -879,98 +905,66 @@ left: 12rem;
   font-weight: 700;
 }
 
-/* Media Queries
-@media (max-width: 1200px) {
-  .home {
-    padding: 5rem 6rem 0 6rem;
-  }
-
-  .home-slogan {
-    font-size: 3.5rem;
-  }
-
-  .ilustration {
-    width: 24rem;
-    top: 35%;
-    right: 8%;
-  }
-}
-
-@media (max-width: 992px) {
-  .home {
-    padding: 4rem 5rem 0 5rem;
-  }
-
-  .home-slogan {
-    font-size: 3rem;
-  }
-
-  .home-text {
-    font-size: 1.25rem;
-    margin-top: 9rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .ilustration {
-    width: 20rem;
-    top: 37%;
-    right: 7%;
-  }
-}
-
-@media (max-width: 768px) {
-  .home {
-    padding: 3rem 4rem 0 4rem;
-  }
-
-  .home-slogan {
-    font-size: 2.5rem;
-  }
-
-  .home-text {
-    font-size: 1.125rem;
-    margin-top: 7rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .ilustration {
-    width: 16rem;
-    top: 39%;
-    right: 6%;
-  }
-}
-
-@media (max-width: 576px) {
-  .home {
-    padding: 2rem 2rem 0 2rem;
-  }
-
-  .home-slogan {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .home-text {
-    font-size: 1rem;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .home-projects {
-    font-size: 1rem;
-    padding-top: 1.5rem;
-  }
-
-  .ilustration {
-    width: 12rem;
-    top: 40%;
-    right: 5%;
-  }
-}
- */
-
 @media screen and (max-width: 480px) {
+
+  .journey-info-detail {
+    width: 17rem;
+  }
+
+  .journey-info-box {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .journey-year {
+    display: flex;
+    gap: 0;
+  }
+
+  .journey-line {
+    background: linear-gradient(to right, #7433DB, #5915C5);
+    height: 0;
+    width: 0;
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .journey-wrapper {
+    padding: 2.5rem;
+    width: 100%;
+    color: #fff;
+  }
+
+  .read-more-btn {
+    font-size: 0.625rem;
+    color: #fff;
+    background: linear-gradient(to right, #AF39E4, #6412C2);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    width: 6.625rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo-box {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-ul {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-ul li {
+    margin: 0 0.5rem;
+  }
+
   .home-slogan {
     font-size: 1.625rem;
   }
@@ -1033,7 +1027,7 @@ left: 12rem;
   .contact-left-section {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-    margin-top: 0.5;
+    margin-top: 4rem;
   }
 
   .contact-flex {
@@ -1042,7 +1036,7 @@ left: 12rem;
   }
 
   .emailbox {
-    width: 18.375rem;
+    width: 22rem;
     position: absolute;
     top: 27rem;
     left: 2.5rem;
@@ -1143,35 +1137,35 @@ left: 12rem;
   .icon-size-js {
     width: 2.938rem;
   }
-  
+
   .icon-size-css {
     width: 3.375rem;
   }
-  
+
   .icon-size-html {
     width: 3.063rem;
   }
-  
+
   .icon-size-tailwind {
     width: 2.875rem;
   }
-  
+
   .icon-size-react {
     width: 3.938rem;
   }
-  
+
   .icon-size-nodejs {
     width: 2.813rem;
   }
-  
+
   .icon-size-mongodb {
     width: 1.5rem;
   }
-  
+
   .icon-size-figma {
     width: 2.313rem;
   }
-  
+
   .icon-size-vscode {
     width: 3.5rem;
   }
@@ -1179,7 +1173,7 @@ left: 12rem;
   .skills-technologies-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .second-section {
@@ -1187,7 +1181,8 @@ left: 12rem;
     padding-top: 6rem;
   }
 
-  .journey-title, .hobbies-title {
+  .journey-title,
+  .hobbies-title {
     font-size: 1.375rem;
   }
 
@@ -1201,6 +1196,7 @@ left: 12rem;
 
   .hobbies-p {
     font-size: 0.875rem;
+    text-align: end;
   }
 
   .hobbies-text-box {
@@ -1214,28 +1210,29 @@ left: 12rem;
   .brush-icon {
     width: 6rem;
   }
-  
+
   .gaming-icon {
     width: 5.688rem;
   }
-  
+
   .bubble-tea-icon {
     width: 4.375rem;
   }
-  
+
   .browser-icon {
     width: 5.5rem;
   }
-  
+
   .hobbies-section-two {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding-top: 0;
   }
-  
+
   .hobbies-wrapper {
     padding-left: 2.5rem;
+    padding-right: 2.5rem;
     padding-bottom: 6rem;
   }
 
@@ -1278,7 +1275,7 @@ left: 12rem;
   .github-grey {
     width: 1.063rem;
   }
-  
+
   .footprint-cover {
     width: 4.313rem;
   }
@@ -1300,18 +1297,13 @@ left: 12rem;
     display: flex;
   }
 
-  .journey-wrapper {
-    padding: 0 5rem 2.5rem 5rem;
-    width: 20rem;
-    color: #fff;
-  }
-
   .about-ilustration {
     width: 7.875rem;
     position: absolute;
     top: 10rem;
     left: 9rem;
-    }
+  }
+
 }
 
 
@@ -1325,30 +1317,3 @@ left: 12rem;
 
 
 
-
-
-.hamburger-menu {
-  display: none;
-  /* Hide hamburger menu by default */
-  cursor: pointer;
-}
-
-.line {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-  transition: transform 0.3s ease;
-}
-
-.line.open:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.line.open:nth-child(2) {
-  opacity: 0;
-}
-
-.line.open:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
