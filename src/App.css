@@ -819,6 +819,13 @@ html {
   transition: border-color 0.3s ease;
 }
 
+.about-ilustration {
+width: 14.938rem;
+position: absolute;
+top: 10rem;
+left: 12rem;
+}
+
 /* Media Queries
 @media (max-width: 1200px) {
   .home {
@@ -931,6 +938,9 @@ html {
 
   .ilustration {
     width: 15.938rem;
+    position: absolute;
+    top: 26rem;
+    left: 5rem;
   }
 
   .home-text {
@@ -1239,6 +1249,13 @@ html {
     width: 20rem;
     color: #fff;
   }
+
+  .about-ilustration {
+    width: 7.875rem;
+    position: absolute;
+    top: 10rem;
+    left: 9rem;
+    }
 }
 
 
