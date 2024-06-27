@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 export default function Contact() {
 
   const handleEmailClick = () => {
-    window.location.href = 'mailto:andreia.12345@hotmail.com';
+    window.location.href = 'mailto:andreiazhwu@gmail.com';
   };
 
   return (
