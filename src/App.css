@@ -772,6 +772,11 @@ html {
   font-weight: 500;
 }
 
+.go-home-box {
+  display: flex;
+  justify-content: center;
+}
+
 .project-btn-code {
   display: flex;
   align-items: center;

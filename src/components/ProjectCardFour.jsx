@@ -17,7 +17,7 @@ export default function ProjectCard() {
         </div>
       </div>
       <div className="project-btns-box">
-        <Link to='/home'>
+        <Link to='/home' className="go-home-box">
           <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
