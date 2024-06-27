@@ -883,7 +883,6 @@ html {
   width: 36.438rem;
 }
 
-
 .video-frame {
   position: absolute;
   top: 85%;
@@ -1184,6 +1183,7 @@ html {
   .second-section {
     padding-left: 2.5rem;
     padding-top: 6rem;
+    padding-bottom: 10rem;
   }
 
   .journey-title,
@@ -1305,8 +1305,16 @@ html {
   .about-ilustration {
     width: 7.875rem;
     position: absolute;
-    top: 10rem;
+    top: 16rem;
     left: 9rem;
+  }
+
+  .video {
+    width: 17.5rem;
+  }
+
+  .video-two {
+    width: 8rem;
   }
 
 }
