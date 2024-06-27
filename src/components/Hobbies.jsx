@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -16,9 +17,14 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
-export default function Hobbies() {
+const Hobbies = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.5, 
+  });
+
   return (
-    <div className="hobbies-wrapper">
+    <div className="hobbies-wrapper" ref={ref}>
       <div className="hobbies-section-one">
         <h2 className="hobbies-title">MY HOBBIES</h2>
         <p className="hobbies-p">Here’s a peek into the things I love doing in my free time!</p>
@@ -27,7 +33,7 @@ export default function Hobbies() {
         className="hobbies-section-two"
         variants={containerVariants}
         initial="hidden"
-        animate="visible"
+        animate={inView ? 'visible' : 'hidden'} 
       >
         <motion.div className="hobbies-icon-box" variants={itemVariants}>
           <div className="hobbies-img-boxbox">
@@ -72,4 +78,6 @@ export default function Hobbies() {
       </motion.div>
     </div>
   );
-}
+};
+
+export default Hobbies;
