@@ -853,7 +853,7 @@ html {
 }
 
 .about-ilustration {
-  width: 14.938rem;
+  width: 25rem;
   position: absolute;
   top: 16rem;
   left: 12rem;
@@ -1094,7 +1094,7 @@ html {
 
   .cv {
     position: absolute;
-    top: 18rem;
+    top: 21rem;
     left: 2.5rem;
   }
 
@@ -1303,7 +1303,7 @@ html {
   }
 
   .about-ilustration {
-    width: 7.875rem;
+    width: 11.5rem;
     position: absolute;
     top: 16rem;
     left: 9rem;
