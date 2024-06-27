@@ -1,10 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-
-const buttonVariants = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
 
 export default function Curriculum() {
   const handleDownload = () => {
@@ -20,11 +14,8 @@ export default function Curriculum() {
   };
 
   return (
-    <motion.div
+    <div
       className="cv"
-      variants={buttonVariants}
-      initial="hidden"
-      animate="visible"
     >
       <button
         className="download-cv"
@@ -35,6 +26,6 @@ export default function Curriculum() {
           <span className="cv-word">CV</span>
         </div>
       </button>
-    </motion.div>
+    </div>
   );
 }
