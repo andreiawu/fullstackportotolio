@@ -1319,14 +1319,69 @@ html {
   .video-two {
     width: 8rem;
   }
-
 }
 
+@media (min-width: 1600px) { 
+  .first-section {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
+  .circle {
+    width: 35rem;
+  }
 
+  .about-ilustration {
+    width: 30rem;
+    position: absolute;
+    top: 16rem;
+    left: 12rem;
+  }
 
+  .cv {
+    position: absolute;
+    top: 31rem;
+    left: 5rem;
+  }
 
+  .about-me {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10rem;
+  }
 
+  .about-p {
+    color: #CFCFCF;
+    margin: 0;
+    font-size: 1.5rem;
+  }
 
+  .about-text-description {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem;
+  }
 
+  .emailbox {
+    position: absolute;
+    top: 12rem;
+    left: 70rem;
+  }
 
+  .ilustration {
+    position: absolute;
+    width: 28rem;
+    top: 23%;
+    right: 9%;
+  }
+  
+ }
